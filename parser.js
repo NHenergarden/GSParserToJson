@@ -89,10 +89,8 @@ function parseBalances(str, startDate, endDate) {
   }
 
 const fs = require('fs');
-console.log(JSON.stringify(jsonData, null, 2));
 fs.writeFileSync('balance.json', (JSON.stringify(jsonData, null, 2)), {encoding: 'utf-8', flag: 'w'});
-console.log('balance.json has been created');
-
+console.log('balance.json has been created')
 
 }
 
