@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const sheetId = '1t1bveuMPVhGsz4tKbhGbcIGhQjk9UbInuxsQiH1wxyM'; 
+const sheetId = '1t1bveuMPVhGsz4tKbhGbcIGhQjk9UbInuxsQiH1wxyM';
 const sheetName = 'Balance';
 const base = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?`;
 const query = encodeURIComponent('Select *');
@@ -90,7 +90,7 @@ function parseBalances(str, startDate, endDate) {
 
 const fs = require('fs');
 fs.writeFileSync('balance.json', (JSON.stringify(jsonData, null, 2)), {encoding: 'utf-8', flag: 'w'});
-console.log('balance.json has been created')
+console.log('balance.json has been created');
 
 }
 
